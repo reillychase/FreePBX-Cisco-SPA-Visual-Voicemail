@@ -16,11 +16,13 @@ So I created this repo for others to be able to find the code, and to improve it
 2. Add the "voicemail.php" script in this repo to that directory
 3. Edit voicemail.php and change "$URLXML="http://10.1.1.10/voicemail";" to your web server/FreePBX IP address
 4. Add this line key code to your Cisco SPA phone, and replace "10.1.1.100" with your web server/FreePBX, "123" with your phone extension for Visual Voicemail:
- 
 
-    <!-- Line Key 2 -->
+```
+<!-- Line Key 2 -->
+<Extension_2_ ua="na">Disabled</Extension_2_> <!-- options: 1/2/3/4/5/6/7/8/9/10/11/12/Disabled -->
+<Short_Name_2_ ua="na">Voicemail</Short_Name_2_>
+<Share_Call_Appearance_2_ ua="na">private</Share_Call_Appearance_2_> <!-- options: private/shared -->
+<Extended_Function_2_ ua="na">fnc=xml;url=http://10.1.1.100/voicemail/voicemail.php?user=123</Extended_Function_2_>
+```
 
-        <Extension_2_ ua="na">Disabled</Extension_2_> <!-- options: 1/2/3/4/5/6/7/8/9/10/11/12/Disabled -->
-        <Short_Name_2_ ua="na">Voicemail</Short_Name_2_>
-        <Share_Call_Appearance_2_ ua="na">private</Share_Call_Appearance_2_> <!-- options: private/shared -->
-        <Extended_Function_2_ ua="na">fnc=xml;url=http://10.1.1.100/voicemail/voicemail.php?user=123</Extended_Function_2_>
+
