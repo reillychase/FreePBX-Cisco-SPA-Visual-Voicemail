@@ -14,19 +14,12 @@ So I created this repo for others to be able to find the code, and to improve it
 # Install Instructions
 1. Create a directory named "voicemail" in "/var/www/html" or your web root
 2. Add the "voicemail.php" script in this repo to that directory
-3. Add this line key code to your Cisco SPA phone, and replace "<your-server-ip-address>", "<your-voicemail-extension>":
-```<!-- Line Key 2 -->
+3. Add this line key code to your Cisco SPA phone, and replace "10.1.1.100" with your web server/FreePBX, "123" with your phone extension for Visual Voicemail:
 
-  <Extension_2_ ua="na">Disabled</Extension_2_> <!-- options: 1/2/3/4/5/6/7/8/9/10/11/12/Disabled -->
-  <Short_Name_2_ ua="na">Voicemail</Short_Name_2_>
-  <Share_Call_Appearance_2_ ua="na">private</Share_Call_Appearance_2_> <!-- options: private/shared -->
-  <Extended_Function_2_ ua="na">fnc=xml;url=http://<your-server-ip-adddress>/voicemail/voicemail.php?user=<your-voicemail-extension></Extended_Function_2_>```
 
-So for example:
+    <!-- Line Key 2 -->
 
-```<!-- Line Key 2 -->
-
-  <Extension_2_ ua="na">Disabled</Extension_2_> <!-- options: 1/2/3/4/5/6/7/8/9/10/11/12/Disabled -->
-  <Short_Name_2_ ua="na">Voicemail</Short_Name_2_>
-  <Share_Call_Appearance_2_ ua="na">private</Share_Call_Appearance_2_> <!-- options: private/shared -->
-  <Extended_Function_2_ ua="na">fnc=xml;url=http://10.1.1.100/voicemail/voicemail.php?user=123</Extended_Function_2_>```
+        <Extension_2_ ua="na">Disabled</Extension_2_> <!-- options: 1/2/3/4/5/6/7/8/9/10/11/12/Disabled -->
+        <Short_Name_2_ ua="na">Voicemail</Short_Name_2_>
+        <Share_Call_Appearance_2_ ua="na">private</Share_Call_Appearance_2_> <!-- options: private/shared -->
+        <Extended_Function_2_ ua="na">fnc=xml;url=http://10.1.1.100/voicemail/voicemail.php?user=123</Extended_Function_2_>
