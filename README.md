@@ -11,7 +11,7 @@ https://supportforums.cisco.com/document/75261/visual-voicemail-updated-and-engl
 ## Install Instructions
 1. Create a directory named "voicemail" in "/var/www/html" or your web root
 2. Add the "voicemail.php" script in this repo to that directory
-3. Edit voicemail.php and change "$URLXML="http://10.1.1.100/voicemail";" to your web server/FreePBX IP address
+3. Edit voicemail.php and change "$URLXML="http://www.example.com/cisco"" to your web server/FreePBX IP address
 4. Add this line key code to your Cisco SPA phone, and replace "10.1.1.100" with your web server/FreePBX, "123" with your phone extension for Visual Voicemail:
 
 ```
