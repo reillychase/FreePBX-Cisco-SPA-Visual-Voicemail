@@ -1,7 +1,7 @@
-﻿<?php
+<?php
 $VMDIR="/var/spool/asterisk/voicemail/default";	// Directorio donde se encuentran los mensajes de voz
 
-$URLXML="http://10.1.1.100/voicemail";
+$URLXML="http://www.example.com/cisco;
 
 
 $USER=trim($_GET[user]);				// Obtenemos el usuario que queremos consultar
