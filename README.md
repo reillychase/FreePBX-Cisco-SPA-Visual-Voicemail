@@ -2,14 +2,11 @@
 A Visual Voicemail application for Cisco SPA phones connected to an Asterisk/FreePBX phone server
 
 ## Intro
-This is a very useful application that enables us to have Visual Voicemail feature for Cisco SPA phones connected to FreePBX.
+This was originally written by Alberto Montilla (https://supportforums.cisco.com/document/67156/visual-voicemailzip) and updated by Adam Goodfriend (https://supportforums.cisco.com/document/75261/visual-voicemail-updated-and-english).
 
-I am not the original author, I was just lucky enough to find it in a forum somewhere on the internet and have been using it for a few years now. The code and most of the comments are in Spanish. Unfortunately, I could not find the original author to credit them.
+I created this repo to continue to update and maintain this useful XML phone service. I plan to further translate to English and review code security.
 
-At this time it looks like the only remaining source on the internet that I could find is:
-http://www.dslreports.com/forum/r27047614-Cisco-SPA525G-Visual-Voicemail-Asterisk-XML-script
-
-So I created this repo for others to be able to find the code, and to improve it also.
+https://supportforums.cisco.com/document/75261/visual-voicemail-updated-and-english
 
 ## Install Instructions
 1. Create a directory named "voicemail" in "/var/www/html" or your web root
